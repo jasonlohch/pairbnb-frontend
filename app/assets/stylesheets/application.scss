@@ -18,12 +18,12 @@
 body {
   padding: 0;
   margin: 0;
-  background: 
+  background:
     linear-gradient(
-      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
     ),
-  asset_url("sample_cover.jpg") no-repeat center center fixed; 
+  asset_url("sample_cover.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -33,19 +33,31 @@ body {
 
 .hero-header {
   text-align: center;
-  height: 500px;
+  height: 200px;
   padding-top: 10%;
   text-transform: uppercase;
   color: #fff;
   .main-text {
     letter-spacing: 6px;
-    font-size: 70px;
+    font-size: 50px;
     margin-bottom: 20px;
   }
+  @media screen and (min-width: 420px){
+
+  .main-text {
+    font-size: 70px;
+  }
+}
+
   .sub-text {
-    font-size: 30px;
+    font-size: 15px;
     letter-spacing: 4px;
     font-weight: lighter;
+  }
+  @media screen and (min-width: 420px){
+    .sub-text {
+      font-size: 30px
+    }
   }
 }
 
@@ -62,15 +74,30 @@ body {
 }
 
 .para-one {
-  width: 50%;
+  width: 100%;
   float: left;
+}
+@media screen and (min-width: 420px){
+  .para-one{
+    width: 50%
+  }
 }
 
 .para-two {
-  width: 50%;
+  width: 100%;
   float: left;
 }
- 
+@media screen and (min-width: 420px){
+  .para-two{
+    width: 50%
+  }
+}
+@media screen and (min-width: 420px){
+  .hero-header {
+    height: 500px
+  }
+}
+
 /*----- Menu -----*/
   .menu {
     width:100%;
@@ -80,7 +107,7 @@ body {
 .menu ul {
   display:inline-block;
 }
- 
+
 .menu li {
   margin:0px 50px 0px 0px;
   float:left;
@@ -89,17 +116,23 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
- 
+
 .menu li:last-child {
   margin-right:0px;
+  display: none;
 }
- 
+@media screen and (min-width: 420px){
+  .menu li:last-child {
+    display: inline-block;
+  }
+}
+
 .menu a {
   color:#fff;
   transition:color linear 0.15s;
   text-decoration: none;
 }
- 
+
 .menu a:hover, .menu .current-item a {
   text-decoration:none;
   color:#303030;
@@ -108,28 +141,28 @@ body {
   width:100%;
   background:#ff5a5f;
 }
- 
+
 .menu ul {
   display:inline-block;
 }
- 
+
 .menu li {
   margin:0px 50px 0px 0px;
   float:left;
   list-style:none;
   font-size:17px;
 }
- 
+
 .menu li:last-child {
   margin-right:0px;
 }
- 
+
 .menu a {
   color:#fff;
   transition:color linear 0.15s;
   text-decoration: none;
 }
- 
+
 .menu a:hover, .menu .current-item a {
   text-decoration:none;
   color:#303030;
